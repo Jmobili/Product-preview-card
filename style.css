@@ -1,0 +1,162 @@
+:root{
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body{
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  background: var(--cream);
+  color:var(--dark-grayish-blue);
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  box-sizing: border-box;
+  justify-content: center;
+  align-content: center;
+  padding: 1.5rem 1rem ;
+  margin:auto;
+}
+
+.main__container{
+  background: var(--white);
+  margin:0;
+  border-radius: .5rem;
+  box-sizing: border-box;
+}
+
+.mobile-image{
+  max-width: 100%;
+  border-radius: .5rem .5rem 0 0;
+}
+
+.desktop-image{
+  display: none;
+}
+
+.text-container{
+  padding: 0 1.5rem ;
+}
+
+.perfume{
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: .2rem;
+  margin: 1.5rem auto 0;
+}
+
+.text-container h1{
+  color: var(--very-dark-blue);
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 1rem auto;
+}
+
+.description{
+  margin: auto auto 0;
+}
+
+.pricing-container{
+  padding: 0 1.5rem 1.5rem;
+}
+
+.price-container{
+  display: flex;
+  align-content: center;
+}
+
+.pricing-container h2{
+  color: var(--dark-cyan);
+  font-size: 2rem;
+  font-family: "Fraunces";
+}
+
+.price-container p{
+  display: block;
+  padding:0;
+  margin:auto 1rem;
+  align-self: center;
+  text-decoration:line-through;
+}
+
+.add-to-cart{
+  background: var(--dark-cyan);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  border-radius: .5rem;
+}
+
+.add-to-cart:hover, .add-to-cart:active{
+  background-color: hsl(158, 36%, 17%);
+}
+
+.attribution {
+  font-size: 11px;
+   text-align: center;
+   margin: 1rem 0;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width:950px) {
+
+  body{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .main__container{
+    display: flex;
+    width: 45%;
+    border-radius: .5rem;
+    margin: auto;
+    align-self: center;
+  }
+
+  .chanel-container{
+    width: 50%;
+  }
+
+  .content-container{
+    width: 50%;
+    box-sizing: border-box;
+    padding:.5rem;
+  }
+
+  .text-container h1{
+    padding-right: 1rem;
+  }
+  
+  .mobile-image{
+    display: none;
+  }
+
+  .desktop-image{
+    display: block;
+    max-width: 100%;
+    border-radius: .5rem 0 0 .5rem;
+  }
+
+  footer{
+    position: absolute;
+    display: flex;
+    align-self: center;
+    text-align: center;
+    bottom: 1rem;
+  }
+
+
+}
